@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -85,17 +85,17 @@ public class PopUI_Achievement : UI_Popup
 
     public void ChangeSuccessAchievement()
     {
-        //Ãß°¡ÀûÀ¸·Î ´Ş¼ºÇÑ ¾÷ÀûÀÌ ¾ø´Ù¸é return
+        //ì¶”ê°€ì ìœ¼ë¡œ ë‹¬ì„±í•œ ì—…ì ì´ ì—†ë‹¤ë©´ return
         if (_achieveCount == DataManager.Data.NowData._achieveCount)
             return;
 
         foreach(KeyValuePair<string,bool> kv in DataManager.Data.NowData.Achievements)
         {
-            //´Ş¼ºÇÏÁö ¸øÇßÀ¸¸é continue;
+            //ë‹¬ì„±í•˜ì§€ ëª»í–ˆìœ¼ë©´ continue;
             if (kv.Value == false)
                 continue;
-            //ÇöÀç ½½·Ô¿¡ Á¤»óÀûÀ¸·Î ¾÷ÀûµéÀÌ Àû¿ëµÇ¾îÀÖ´ÂÁö È®ÀÎ
-            //ÇØ´ç ¾÷ÀûÀÌ ¾ø´Ù¸é Ã¼Å©
+            //í˜„ì¬ ìŠ¬ë¡¯ì— ì •ìƒì ìœ¼ë¡œ ì—…ì ë“¤ì´ ì ìš©ë˜ì–´ìˆëŠ”ì§€ í™•ì¸
+            //í•´ë‹¹ ì—…ì ì´ ì—†ë‹¤ë©´ ì²´í¬
             if (!_achievementSlotDic.ContainsKey(kv.Key))
                 CheckSlotCount();
 

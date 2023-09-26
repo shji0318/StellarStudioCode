@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -96,7 +96,7 @@ public class MonsterController : CreatureController
 
         float distance = (_player.transform.position - transform.position).magnitude;
         
-        //¹«ÇÑ¸ÊÀÌ±â ¶§¹®¿¡ ÀÏÁ¤ ¹üÀ§¸¦ ³Ñ¾î°¡¸é ¸ó½ºÅÍ¸¦ ¿öÇÁ ½ÃÅ´
+        //ë¬´í•œë§µì´ê¸° ë•Œë¬¸ì— ì¼ì • ë²”ìœ„ë¥¼ ë„˜ì–´ê°€ë©´ ëª¬ìŠ¤í„°ë¥¼ ì›Œí”„ ì‹œí‚´
         if(distance > 20f)
         {
             WarpMonster();

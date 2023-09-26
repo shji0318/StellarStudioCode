@@ -1,4 +1,4 @@
-using System;
+ï»¿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -222,8 +222,8 @@ public class MonsterSpawner : MonoBehaviour
     public void SpawnPatternCircleBineul()
     {        
         Vector3 nowPosition = PlayerController.Player.transform.position;
-        // º¤ÅÍÀÇ Å©±â¸¦ ¾Ë ¶§, ÀÓÀÇÀÇ º¤ÅÍ¸¦ ±¸ÇÒ ¶§ º¤ÅÍÀÇ ÁÂÇ¥°è´Â (norm*Cos¥È,norm*Sin¥È)
-        // À§ °ø½ÄÀ» ÅëÇØ ÇöÀç À§Ä¡¿¡ ¿øÇüÀ¸·Î ¸ó½ºÅÍ¸¦ ½ºÆù
+        // ë²¡í„°ì˜ í¬ê¸°ë¥¼ ì•Œ ë•Œ, ì„ì˜ì˜ ë²¡í„°ë¥¼ êµ¬í•  ë•Œ ë²¡í„°ì˜ ì¢Œí‘œê³„ëŠ” (norm*CosÎ˜,norm*SinÎ˜)
+        // ìœ„ ê³µì‹ì„ í†µí•´ í˜„ì¬ ìœ„ì¹˜ì— ì›í˜•ìœ¼ë¡œ ëª¬ìŠ¤í„°ë¥¼ ìŠ¤í°
         for (int i = 0; i < 20; i++)
         {
             float degree = (180 - (18 * i));
@@ -290,8 +290,8 @@ public class MonsterSpawner : MonoBehaviour
     public void TimePatternBigMonster()
     {        
         Vector3 nowPosition = PlayerController.Player.transform.position;
-        // º¤ÅÍÀÇ Å©±â¸¦ ¾Ë ¶§, ÀÓÀÇÀÇ º¤ÅÍ¸¦ ±¸ÇÒ ¶§ º¤ÅÍÀÇ ÁÂÇ¥°è´Â (norm*Cos¥È,norm*Sin¥È)
-        // À§ °ø½ÄÀ» ÅëÇØ ÇöÀç À§Ä¡¿¡ ¿øÇüÀ¸·Î ¸ó½ºÅÍ¸¦ ½ºÆù
+        // ë²¡í„°ì˜ í¬ê¸°ë¥¼ ì•Œ ë•Œ, ì„ì˜ì˜ ë²¡í„°ë¥¼ êµ¬í•  ë•Œ ë²¡í„°ì˜ ì¢Œí‘œê³„ëŠ” (norm*CosÎ˜,norm*SinÎ˜)
+        // ìœ„ ê³µì‹ì„ í†µí•´ í˜„ì¬ ìœ„ì¹˜ì— ì›í˜•ìœ¼ë¡œ ëª¬ìŠ¤í„°ë¥¼ ìŠ¤í°
         for (int i = 0; i < 2; i++)
         {
             float degree = (180 - (18 * i));
@@ -319,8 +319,8 @@ public class MonsterSpawner : MonoBehaviour
     {
         SoundManager.Sound.PlayBGM(Resources.Load<AudioClip>("Sound/BGM/BossBGM"));        
         Vector3 nowPosition = PlayerController.Player.transform.position;
-        // º¤ÅÍÀÇ Å©±â¸¦ ¾Ë ¶§, ÀÓÀÇÀÇ º¤ÅÍ¸¦ ±¸ÇÒ ¶§ º¤ÅÍÀÇ ÁÂÇ¥°è´Â (norm*Cos¥È,norm*Sin¥È)
-        // À§ °ø½ÄÀ» ÅëÇØ ÇöÀç À§Ä¡¿¡ ¿øÇüÀ¸·Î ¸ó½ºÅÍ¸¦ ½ºÆù
+        // ë²¡í„°ì˜ í¬ê¸°ë¥¼ ì•Œ ë•Œ, ì„ì˜ì˜ ë²¡í„°ë¥¼ êµ¬í•  ë•Œ ë²¡í„°ì˜ ì¢Œí‘œê³„ëŠ” (norm*CosÎ˜,norm*SinÎ˜)
+        // ìœ„ ê³µì‹ì„ í†µí•´ í˜„ì¬ ìœ„ì¹˜ì— ì›í˜•ìœ¼ë¡œ ëª¬ìŠ¤í„°ë¥¼ ìŠ¤í°
         float degree = 0f;
         float sin = Mathf.Sin(degree);
         float cos = Mathf.Cos(degree);

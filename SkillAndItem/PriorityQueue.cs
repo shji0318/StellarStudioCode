@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -16,9 +16,9 @@ public class PriorityQueue<T> where T : Skill
         int now = _count - 1;
         int next;
 
-        while (now > 0) // °¡ÁßÄ¡°¡ ³·À» ¼ö·Ï À§·Î ¿Ã¶ó¿À°Ô ±¸Çö
+        while (now > 0) // ê°€ì¤‘ì¹˜ê°€ ë‚®ì„ ìˆ˜ë¡ ìœ„ë¡œ ì˜¬ë¼ì˜¤ê²Œ êµ¬í˜„
         {
-            next = (now - 1) / 2; // ºÎ¸ð ³ëµå ÀÎµ¦½º
+            next = (now - 1) / 2; // ë¶€ëª¨ ë…¸ë“œ ì¸ë±ìŠ¤
 
             if (_list[now]._nextActionTime > _list[next]._nextActionTime)
                 break;
@@ -38,7 +38,7 @@ public class PriorityQueue<T> where T : Skill
         _list.RemoveAt(_count - 1);
         _count--;
 
-        #region °»½Å
+        #region ê°±ì‹ 
         int now = 0;
         int left;
         int right;
@@ -76,7 +76,7 @@ public class PriorityQueue<T> where T : Skill
         _list.RemoveAt(_count - 1);
         _count--;
 
-        #region °»½Å
+        #region ê°±ì‹ 
         int now = idx;
         int left;
         int right;
@@ -105,13 +105,13 @@ public class PriorityQueue<T> where T : Skill
         #endregion
     }
 
-    public void Remove(int idx) // ¿À¹ö·Îµù 
+    public void Remove(int idx) // ì˜¤ë²„ë¡œë”© 
     {
         _list[idx] = _list[_count - 1];
         _list.RemoveAt(_count - 1);
         _count--;
 
-        #region °»½Å
+        #region ê°±ì‹ 
         int now = idx;
         int left;
         int right;

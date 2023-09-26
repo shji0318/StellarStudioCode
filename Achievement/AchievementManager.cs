@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -59,7 +59,7 @@ public class AchievementManager : MonoBehaviour
         _successAchievementQueue.Enqueue(achv);
     }
 
-    // SuccessQueue¿¡ µ¥ÀÌÅÍ°¡ Á¸ÀçÇÒ °æ¿ì ½ÇÇà 
+    // SuccessQueueì— ë°ì´í„°ê°€ ì¡´ì¬í•  ê²½ìš° ì‹¤í–‰ 
     public IEnumerator PopSuccessAchievements()
     {
         int length = _successAchievementQueue.Count;
@@ -86,25 +86,25 @@ public class AchievementManager : MonoBehaviour
     {
         switch (name)
         {
-            case "Å¸ºñÀÇ ³ªÄ§¹İ":
+            case "íƒ€ë¹„ì˜ ë‚˜ì¹¨ë°˜":
                 AchievementManager.Achievements.Enqueue("VeteranTraveler");
                 break;
             case "TNT":
                 AchievementManager.Achievements.Enqueue("ArtBoom");
                 break;
-            case "±«½Ä":
+            case "ê´´ì‹":
                 AchievementManager.Achievements.Enqueue("TrashFood");
                 break;
-            case "°íµå¸§":
+            case "ê³ ë“œë¦„":
                 AchievementManager.Achievements.Enqueue("GOATIce");
                 break;
-            case "Àç°£µÕÀÌ":
+            case "ì¬ê°„ë‘¥ì´":
                 AchievementManager.Achievements.Enqueue("DontStopSiro");
                 break;
-            case "È÷³ªÄÚÆĞ½º":
+            case "íˆë‚˜ì½”íŒ¨ìŠ¤":
                 AchievementManager.Achievements.Enqueue("Huhuhu");
                 break;
-            case "ÄÜ®®":
+            case "ì½˜ì¸•ì¸•":
                 AchievementManager.Achievements.Enqueue("TomatoJuice");
                 break;
         }

@@ -1,18 +1,18 @@
-using System;
+ï»¿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public abstract class CreatureController : MonoBehaviour
 {
-    //====================º¯¼ö ¹× ÇÁ·ÎÆÛÆ¼==========================
+    //====================ë³€ìˆ˜ ë° í”„ë¡œí¼í‹°==========================
     [SerializeField]
     protected Animator _animator;
     [SerializeField]
     protected CreatureState _state = CreatureState.None;
     protected SpriteRenderer _sr;
 
-    //======================´É·ÂÄ¡=================    
+    //======================ëŠ¥ë ¥ì¹˜=================    
     [SerializeField]
     protected float _hp = 1000f;
     //=============================================
@@ -56,7 +56,7 @@ public abstract class CreatureController : MonoBehaviour
         UpdateState();
     }
 
-    //»óÅÂ ÆĞÅÏÀ» ÀÀ¿ëÇÏ¿© »óÅÂ¿¡ µû¸¥ Çàµ¿ ·ÎÁ÷À» °ü¸®
+    //ìƒíƒœ íŒ¨í„´ì„ ì‘ìš©í•˜ì—¬ ìƒíƒœì— ë”°ë¥¸ í–‰ë™ ë¡œì§ì„ ê´€ë¦¬
     public virtual void UpdateState()
     {        
         switch(_state)

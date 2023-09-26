@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Security.Cryptography;
@@ -92,7 +92,7 @@ public class DataManager : MonoBehaviour
    
     public void AddOrRemoveAchievementDic()
     {
-        // ¸¸¾à ÇöÀç ÀúÀåµÈ ¾÷ÀûÀÇ ¼ö°¡ DB ¾÷Àû ¼öº¸´Ù ÀûÀ» °æ¿ì Ãß°¡ÇÏ´Â ÀÛ¾÷
+        // ë§Œì•½ í˜„ì¬ ì €ì¥ëœ ì—…ì ì˜ ìˆ˜ê°€ DB ì—…ì  ìˆ˜ë³´ë‹¤ ì ì„ ê²½ìš° ì¶”ê°€í•˜ëŠ” ì‘ì—…
         if(NowData.Achievements.Count < AchievementManager.Achievements.AchievementDB.Data.Count)
         {
             foreach(string key in AchievementManager.Achievements.AchievementDB.Data.Keys)
@@ -103,7 +103,7 @@ public class DataManager : MonoBehaviour
                 NowData.Achievements.Add(key, false);
             }
         }
-        // ¸¸¾à ÇöÀç ÀúÀåµÈ ¾÷ÀûÀÇ ¼ö°¡ DB ¾÷Àû ¼öº¸´Ù ¸¹´Ù¸é ÇÊ¿ä¾ø´Â ¾÷ÀûÀ» Á¦°ÅÇÏ´Â ÀÛ¾÷
+        // ë§Œì•½ í˜„ì¬ ì €ì¥ëœ ì—…ì ì˜ ìˆ˜ê°€ DB ì—…ì  ìˆ˜ë³´ë‹¤ ë§ë‹¤ë©´ í•„ìš”ì—†ëŠ” ì—…ì ì„ ì œê±°í•˜ëŠ” ì‘ì—…
         else
         {
             foreach (string key in NowData.Achievements.Keys)
@@ -182,7 +182,7 @@ public class DataManager : MonoBehaviour
     }
 
 
-    //===================RijndaelManaged¸¦ ÅëÇÑ AES¾ÏÈ£È­=========================
+    //===================RijndaelManagedë¥¼ í†µí•œ AESì•”í˜¸í™”=========================
 
     private string Encrypt(string data)
     {
