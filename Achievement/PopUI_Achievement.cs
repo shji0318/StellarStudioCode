@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.AddressableAssets;
 
 public class PopUI_Achievement : UI_Popup
 {    
@@ -36,7 +37,7 @@ public class PopUI_Achievement : UI_Popup
     {
         Bind<Button>(typeof(Buttons));
         _slotRoot = gameObject.Find<Transform>("Achievement_SlotLayout",true);
-        _achievemetSlot = Resources.Load<Achievement_Slot>("Prefabs/UI/Popup/Achievement_Slot");
+        _achievemetSlot = Util.LoadAssetAsync<GameObject>("Achievement_Slot").GetComponent<Achievement_Slot>();
 
         AddUIEvent(Get<Button>((int)Buttons.Achievement_ExitButton).gameObject,
             (PointerEventData data) => UIManager.UI.DestroyPopupUI(),

@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class DataManager : MonoBehaviour
 {
-    private static readonly string PrivateKey = "01j0i6da2e07su4n6gn1an2sy";
+    private static readonly string PrivateKey = "-";
     
     static DataManager _instance;
     public static DataManager Data { get { return _instance; } }
