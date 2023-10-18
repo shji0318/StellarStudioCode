@@ -1,2 +1,2 @@
 # StellarStudioCode
- 스텔라 스튜디오 프로젝트에서 작성한 코드들 입니다.
+ <img src="https://capsule-render.vercel.app/api?type=wave&color=auto&height=300&section=header&text=capsule%20render&fontSize=90" />
