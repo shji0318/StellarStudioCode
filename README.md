@@ -1,6 +1,7 @@
+<div align="center">
 <img src="https://capsule-render.vercel.app/api?type=cylinder&color=auto&height=300&section=header&text=StellarStudioCode%20&fontSize=90" />
 
-<div align="center">
+
 ![notion](https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white) 
 : [Notion][notionlink]
 
