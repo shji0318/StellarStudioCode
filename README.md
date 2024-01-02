@@ -1,4 +1,5 @@
-<span style="color: red;">아래는 해당 리포지토리의 간략한 설명입니다.</span>
+
+#### 아래는 해당 리포지토리의 간략한 설명입니다
 
 ---
 
@@ -84,6 +85,7 @@
 - 게임의 가장 기본 요소인 플레이어와 몬스터는 아이템과 더불어 추후 개체가 추가될 가능성이 컸기 때문에 최대한 **코드 재사용성을 늘려 개발 효율을 늘리는 것을 목표**로 했습니다. 
 - Monster와 Player가 공통으로 사용하는 특성 및 State를 추상 클래스인 CreatureController를 작성한 후, **상속하여 코드의 재사용성을 늘리도록 설계**했습니다.
 
+
 ### 간단한 클래스 설명
 - [**CreatureController.cs**](https://github.com/shji0318/StellarStudioCode/blob/main/Achievement/CreatureController.cs)
   - Monster와 Player의 공통된 데이터를 갖는 추상 클래스
@@ -107,9 +109,86 @@
 - [**PlayerController.cs**](https://github.com/shji0318/StellarStudioCode/blob/main/PlayerAndMonster/PlayerController.cs)
   - CreatureController를 상속 받는 클래스
   - 플레이어의 인풋에 따른 캐릭터의 행동 및 애니메이션을 상태 패턴으로 구현했습니다.
+ 
     
+---
+
+
+## Save & Load
+
+
+<p align = "center"><img src="https://file.notion.so/f/f/102d0a0d-f982-4f89-877e-6d4b07addbc7/879a6301-ee1b-4ec4-9331-d48569e0e2fc/SaveLoad.gif?id=c53c3edf-6c14-4ce7-8819-b10cea74e037&table=block&spaceId=102d0a0d-f982-4f89-877e-6d4b07addbc7&expirationTimestamp=1704268800000&signature=o2E0qBncaGekJn8g14mDfmmOiINyBgPYllhT3hJwLV8&downloadName=SaveLoad.gif">
+</p>
+
+
+### UML
+
+
+<p align = "center"><img src="https://file.notion.so/f/f/102d0a0d-f982-4f89-877e-6d4b07addbc7/6dd0961d-e4fd-4fa0-a01a-57ed5ba7a44e/SaveLoadUML.png?id=851b4a5a-f5ba-4937-a45e-d5cf81263227&table=block&spaceId=102d0a0d-f982-4f89-877e-6d4b07addbc7&expirationTimestamp=1704268800000&signature=jz6ej0UnNTytGYBrxr-VhKQ1b5zVeoKKd9EEycml1Ug&downloadName=Save%26LoadUML.PNG.png" height = "500px" weight = "100px">
+</p>
+
+
+### 개발과정
+- 게임의 가장 기본 요소인 플레이어와 몬스터는 아이템과 더불어 추후 개체가 추가될 가능성이 컸기 때문에 최대한 **코드 재사용성을 늘려 개발 효율을 늘리는 것을 목표**로 했습니다. 
+- Monster와 Player가 공통으로 사용하는 특성 및 State를 추상 클래스인 CreatureController를 작성한 후, **상속하여 코드의 재사용성을 늘리도록 설계**했습니다.
+
+
+### 간단한 클래스 설명
+- [**DataManager.cs**](https://github.com/shji0318/StellarStudioCode/blob/main/SaveAndLoad/DataManager.cs)
+  - 플레이시 사용되는 데이터들을 관리하는 싱글톤 클래스
+  - 업적, 옵션 세팅값, 골드 등 플레이어의 세이브 데이터 및 게임 플레이시 사용되는 Stage 데이터 등을 관리합니다.
  
   
+- [**SaveData.cs**](https://github.com/shji0318/StellarStudioCode/blob/main/SaveAndLoad/SaveData.cs)
+  - 업적, 옵션 세팅값, 골드, 상점 구매 목록 등을 사용자의 로컬에 저장
+  - C#에서 제공하는 RijindaelManaed 클래스를 통하여 private key값을 이용하여 암호화하였습니다.
+ 
+  
+- [**SerializableDictionary.cs**](https://github.com/shji0318/StellarStudioCode/blob/main/SaveAndLoad/SerializableDictionary.cs)
+  - SaveData를 구성할 때 업적 달성 목록을 저장해야했는데 직렬화된 데이터만 json으로 저장할 수 있기 때문에 **Dictionary를 저장하기 위해** 구현한 클래스
+  - json으로 저장할 때 key값과 value값을 List로 받아온 후 직렬화해서 저장, 불러올 때는 역순인 데이터를 받아온 후 Dictionary형태로 데이터를 관리하게 됩니다.
+
+
+- [**StageData.cs**](https://github.com/shji0318/StellarStudioCode/blob/main/PlayerAndMonster/StageData.cs)
+  - 스테이지 플레이시 사용하는 데이터들을 관리하는 클래스
+  - 해당 스테이지에서 획득한 아이템, 처치한 몬스터 수 등을 관리한 후 게임이 종료될 때 플레이어에게 제공
+    
+---
+
+
+## Save & Load
+
+
+<p align = "center"><img src="https://file.notion.so/f/f/102d0a0d-f982-4f89-877e-6d4b07addbc7/fb8b8f6c-425d-4937-bef1-b05f5e2d8f5c/Item.gif?id=97db7ddd-02c1-4703-9b5f-3e0d3ce45522&table=block&spaceId=102d0a0d-f982-4f89-877e-6d4b07addbc7&expirationTimestamp=1704268800000&signature=3X9VEcm_2EbJIGjiA0b9RVfuqj-SltfWa_mQjxZOA2E&downloadName=Item.gif">
+</p>
+
+
+### UML
+
+
+<p align = "center"><img src="https://file.notion.so/f/f/102d0a0d-f982-4f89-877e-6d4b07addbc7/80390440-7d6f-46a5-8e03-8eb795748e10/%EC%8A%A4%ED%82%AC%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8.png?id=4a712352-e1e2-4a0a-bcf4-e2fca9fc01f1&table=block&spaceId=102d0a0d-f982-4f89-877e-6d4b07addbc7&expirationTimestamp=1704268800000&signature=DONXSr4IxJVBST-07W2HeDi9nNHU4rpzSuAnLrX3Q30&downloadName=%EC%8A%A4%ED%82%AC%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8.PNG.png" height = "500px" weight = "100px">
+</p>
+
+
+### 개발과정
+- 뱀파이버 서바이벌 류 게임의 특성인 아이템을 획득 시 자동으로 스킬들을 사용하는 방식으로 구현하기로 했습니다. 
+  - 이에 따라 스킬들의 실행 주기를 관리해야 했기에 우선순위 큐를 구현하여 이를 관리하였습니다.
+
+
+### 간단한 클래스 설명
+- [**PriorityQueue.cs**](https://github.com/shji0318/StellarStudioCode/blob/main/SkillAndItem/PriorityQueue.cs)
+  - 아이템 획득 후, 자동으로 사용되는 스킬들을 관리하기 위해서 사용했습니다.
+  - 이진 트리 구조를 갖으며 기준에 따라 자동으로 정렬하는 자료구조인 우선순위큐를 구현하여 사용했습니다.
+    - 이때 기준을 스킬들의 다음 실행 주기를 기준으로 정렬하는 식으로 구현했습니다.  
+ 
+  
+- [**SkillManager.cs**](https://github.com/shji0318/StellarStudioCode/blob/main/SkillAndItem/SkillManager.cs)
+  - 스킬의 등록, 사용, 능력치 강화 등을 관리하는 클래스    
+ 
+  
+- [**Skill.cs**](https://github.com/shji0318/StellarStudioCode/blob/main/SkillAndItem/Skill.cs)
+  - 스킬의 기본적인 형태를 갖는 추상 클래스
 
 
 ---
+
