@@ -1,5 +1,16 @@
+<div align="center"> 
 
-#### 아래는 해당 리포지토리의 간략한 설명입니다
+  
+![Notion](https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white) 
+: [Notion][notionlink]
+
+[notionlink]: https://www.notion.so/6ae307766bc84dd9b94ab463f08ebabe?pvs=4 "go notion"  
+
+
+ </div>
+
+
+#### <p align="center">아래는 해당 리포지토리의 간략한 설명입니다</p>
 
 ---
 
