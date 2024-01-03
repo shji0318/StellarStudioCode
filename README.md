@@ -106,7 +106,7 @@
 - [**MonsterController.cs**](https://github.com/shji0318/StellarStudioCode/blob/main/PlayerAndMonster/MonsterController.cs)
   - CreatureController를 상속 받는 클래스
   - 몬스터들 종류와 상관없는 공통된 기능들을 구현한 후, 몬스터 종류마다 개별적인 능력치는 **ScriptableObject를 통해 몬스터마다 스크립트를 생성하는 것이 아닌 하나의 스크립트로 재사용성을 늘렸습니다.**
-    - 팩토리 패턴을 사용하여 구현하는 것과 프리팹으로 결합한 후 리소스 단위로 관리하는 것 중 Addressable을 사용했을 때 후자가 더 편하다 생각하여 이런식으로 구현해 보았습니다.
+    - 팩토리 패턴을 사용하여 상황에 따라 동적으로 필요로 하는 몬스터를 생성할 수 있도록 설계했습니다.
  
   
 - [**MonsterSpawner.cs**](https://github.com/shji0318/StellarStudioCode/blob/main/PlayerAndMonster/MonsterSpawner.cs)
