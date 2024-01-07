@@ -24,7 +24,7 @@
 ### UML
 
 
-<p align = "center"><img src="https://file.notion.so/f/f/102d0a0d-f982-4f89-877e-6d4b07addbc7/41c5b6e2-823b-4c27-bf14-80eb996ce031/AchievementUML.png?id=3707107e-a42b-4a27-aea3-cc8c5888efec&table=block&spaceId=102d0a0d-f982-4f89-877e-6d4b07addbc7&expirationTimestamp=1704254400000&signature=6pTRxXe4c-uT_Wg6jh_eyla3IL17K89wJvfteSsVYI0&downloadName=AchievementUML.png" height = "500px" weight = "100px">
+<p align = "center"><img src="https://jidaeportfolio.s3.ap-northeast-2.amazonaws.com/AchievementUML.png" height = "500px" weight = "100px">
 </p>
 
 
@@ -81,14 +81,14 @@
 ## 플레이어 및 몬스터
 
 
-<p align = "center"><img src="https://file.notion.so/f/f/102d0a0d-f982-4f89-877e-6d4b07addbc7/d9086ccf-a562-49e9-9a33-3f0cafebeebc/Monster.gif?id=e5d161a4-b0f7-4931-904e-5cc6e0f037c7&table=block&spaceId=102d0a0d-f982-4f89-877e-6d4b07addbc7&expirationTimestamp=1704268800000&signature=SvKZjBZUZmnbYfP8XVQcDy5WPmLu3F6zxQNVTvgjU1w&downloadName=Monster.gif">
+<p align = "center"><img src="https://jidaeportfolio.s3.ap-northeast-2.amazonaws.com/Monster.gif">
 </p>
 
 
 ### UML
 
 
-<p align = "center"><img src="https://file.notion.so/f/f/102d0a0d-f982-4f89-877e-6d4b07addbc7/eda382be-7a9c-4e65-a51e-048e12e8574e/CreatureUML.png?id=d7f4425c-5c1b-4754-af42-3eb94eb8deb6&table=block&spaceId=102d0a0d-f982-4f89-877e-6d4b07addbc7&expirationTimestamp=1704268800000&signature=RBBvXu7mm-p7uLxU6J69knMjufFXVCi0_cHvGRuX1eA&downloadName=CreatureUML.PNG.png" height = "500px" weight = "100px">
+<p align = "center"><img src="https://jidaeportfolio.s3.ap-northeast-2.amazonaws.com/CreatureUML.PNG.png" height = "500px" weight = "100px">
 </p>
 
 
@@ -128,14 +128,14 @@
 ## Save & Load
 
 
-<p align = "center"><img src="https://file.notion.so/f/f/102d0a0d-f982-4f89-877e-6d4b07addbc7/879a6301-ee1b-4ec4-9331-d48569e0e2fc/SaveLoad.gif?id=c53c3edf-6c14-4ce7-8819-b10cea74e037&table=block&spaceId=102d0a0d-f982-4f89-877e-6d4b07addbc7&expirationTimestamp=1704268800000&signature=o2E0qBncaGekJn8g14mDfmmOiINyBgPYllhT3hJwLV8&downloadName=SaveLoad.gif">
+<p align = "center"><img src="https://jidaeportfolio.s3.ap-northeast-2.amazonaws.com/SaveLoad.gif">
 </p>
 
 
 ### UML
 
 
-<p align = "center"><img src="https://file.notion.so/f/f/102d0a0d-f982-4f89-877e-6d4b07addbc7/6dd0961d-e4fd-4fa0-a01a-57ed5ba7a44e/SaveLoadUML.png?id=851b4a5a-f5ba-4937-a45e-d5cf81263227&table=block&spaceId=102d0a0d-f982-4f89-877e-6d4b07addbc7&expirationTimestamp=1704268800000&signature=jz6ej0UnNTytGYBrxr-VhKQ1b5zVeoKKd9EEycml1Ug&downloadName=Save%26LoadUML.PNG.png" height = "500px" weight = "100px">
+<p align = "center"><img src="https://jidaeportfolio.s3.ap-northeast-2.amazonaws.com/Save%26LoadUML.PNG.png" height = "500px" weight = "100px">
 </p>
 
 
@@ -167,17 +167,17 @@
 ---
 
 
-## Save & Load
+## Skill
 
 
-<p align = "center"><img src="https://file.notion.so/f/f/102d0a0d-f982-4f89-877e-6d4b07addbc7/fb8b8f6c-425d-4937-bef1-b05f5e2d8f5c/Item.gif?id=97db7ddd-02c1-4703-9b5f-3e0d3ce45522&table=block&spaceId=102d0a0d-f982-4f89-877e-6d4b07addbc7&expirationTimestamp=1704268800000&signature=3X9VEcm_2EbJIGjiA0b9RVfuqj-SltfWa_mQjxZOA2E&downloadName=Item.gif">
+<p align = "center"><img src="https://jidaeportfolio.s3.ap-northeast-2.amazonaws.com/Item.gif">
 </p>
 
 
 ### UML
 
 
-<p align = "center"><img src="https://file.notion.so/f/f/102d0a0d-f982-4f89-877e-6d4b07addbc7/80390440-7d6f-46a5-8e03-8eb795748e10/%EC%8A%A4%ED%82%AC%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8.png?id=4a712352-e1e2-4a0a-bcf4-e2fca9fc01f1&table=block&spaceId=102d0a0d-f982-4f89-877e-6d4b07addbc7&expirationTimestamp=1704268800000&signature=DONXSr4IxJVBST-07W2HeDi9nNHU4rpzSuAnLrX3Q30&downloadName=%EC%8A%A4%ED%82%AC%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8.PNG.png" height = "500px" weight = "100px">
+<p align = "center"><img src="https://jidaeportfolio.s3.ap-northeast-2.amazonaws.com/%EC%8A%A4%ED%82%AC%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8.PNG.png" height = "500px" weight = "100px">
 </p>
 
 
