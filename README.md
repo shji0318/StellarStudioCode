@@ -17,7 +17,7 @@
 ## 업적 시스템
 
 
-<p align = "center"><img src="https://blogfiles.pstatic.net/MjAyMzA0MDVfMjE5/MDAxNjgwNjc2MDU2NzY2.Nh1ZTCdY6_Pokxl16xcIXVJUIR2_6wv8DK5JQo2ecTkg._W8Rx-2iuo898phlflih98dYbSRwcwDPJGlO7mEqZXgg.PNG.ji980207/%EB%82%B4%EC%A0%81%EC%99%B8%EC%A0%81.png">
+<p align = "center"><img src="https://jidaeportfolio.s3.ap-northeast-2.amazonaws.com/Achievement.gif">
 </p>
 
 
